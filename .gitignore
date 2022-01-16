@@ -1,0 +1,16 @@
+frontend/.vscode/extensions.json
+frontend/.vscode/launch.json
+frontend/.vscode/tasks.json
+frontend/node_modules/
+/backend/Backend.WebApi/appsettings.json
+/backend/.vs/backend
+/backend/Backend.DataAccess/obj
+/backend/Backend.Models/obj
+/backend/Backend.Repositories/obj
+/backend/Backend.UnitOfWork/obj
+/backend/Backend.WebApi/obj
+/backend/Backend.DataAccess/bin/Debug/netcoreapp3.1
+/backend/Backend.Models/bin/Debug/netcoreapp3.1
+/backend/Backend.Repositories/bin/Debug/netcoreapp3.1
+/backend/Backend.UnitOfWork/bin/Debug/netcoreapp3.1
+/backend/Backend.WebApi/bin/Debug/netcoreapp3.1

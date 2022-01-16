@@ -1,0 +1,13 @@
+{
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "Backend": "Server=localhost;Database=Northwind;Trusted_Connection=True;MultipleActiveResultSets=True;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  }
+}
