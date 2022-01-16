@@ -6,7 +6,7 @@ namespace Backend.Models
 {
     public class Supplier
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string CompanyName { get; set; }
         public string ContactTitle { get; set; }
         public string City { get; set; }

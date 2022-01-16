@@ -1,19 +1,20 @@
 ﻿using Backend.Models;
 using Backend.Repositories;
 using Dapper;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Text;
 
 namespace Backend.DataAccess
 {
-    public class CustomerRepository : Repository<Customer>,ICustomerRepository
+    internal class SupplierRepository : Repository<Supplier>, ISupplierRepository
     {
-        public CustomerRepository(string connectionString) : base(connectionString)
-        { 
+        public SupplierRepository(string connectionString):base(connectionString)
+        {
 
         }
-
-        public IEnumerable<Customer> CustomerPagedList(int page, int rows)
+        public IEnumerable<Supplier> SupplierPagedList(int page, int rows)
         {
             var parameters = new DynamicParameters();
             parameters.Add("@page", page);
@@ -21,8 +22,9 @@ namespace Backend.DataAccess
 
             using (var connection = new SqlConnection(_connectionString))
             {
-                return connection.Query<Customer>("dbo.CustomerPagedList", parameters, commandType: System.Data.CommandType.StoredProcedure);
+                return connection.Query<Supplier>("dbo.SupplierPagedList", parameters, commandType: System.Data.CommandType.StoredProcedure);
             }
+
         }
     }
 }

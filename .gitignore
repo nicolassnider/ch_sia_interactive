@@ -14,3 +14,4 @@ frontend/node_modules/
 /backend/Backend.Repositories/bin/Debug/netcoreapp3.1
 /backend/Backend.UnitOfWork/bin/Debug/netcoreapp3.1
 /backend/Backend.WebApi/bin/Debug/netcoreapp3.1
+/backend/Backend.WebApi/bin/Debug/net6.0

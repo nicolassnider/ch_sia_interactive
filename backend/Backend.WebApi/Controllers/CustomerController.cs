@@ -1,10 +1,12 @@
 ﻿using Backend.Models;
 using Backend.UnitOfWork;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Backend.WebApi.Controllers
 {
     [Route("api/Customer")]
+    [Authorize]
     public class CustomerController:Controller
     {
         private readonly IUnitOfWork _unitOfWork;
