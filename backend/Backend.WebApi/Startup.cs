@@ -1,6 +1,7 @@
 using Backend.DataAccess;
 using Backend.UnitOfWork;
 using Backend.WebApi.Authentication;
+using Backend.WebApi.GlobalErrorHandler;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -61,6 +62,8 @@ namespace Backend.WebApi
             app.UseAuthentication();
 
             app.UseAuthorization();
+
+            app.ConfigureExceptionHandler();
 
             app.UseEndpoints(endpoints =>
             {
